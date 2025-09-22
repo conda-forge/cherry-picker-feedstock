@@ -23,7 +23,7 @@ requirements:
   host:
     - python {{ python_min }}
     - hatch-vcs
-    - hatchling
+    - hatchling >=1.27
     - pip
   run:
     - python >={{ python_min }}
