@@ -1,8 +1,8 @@
 {% set name = "cherry-picker" %}
 {% set import = "cherry_picker" %}
 {% set entrypoint = "cherry_picker" %}
-{% set version = "2.5.0" %}
-{% set sha256 = "ed7c3dd55f43e2b1c6325920c41c4fba0631eb90da1b208dad9f9ac035932918" %}
+{% set version = "2.6.0" %}
+{% set sha256 = "f6a362c450ef033090355bbee94fe3f7c600f23f0da57d27146f55700860d8f9" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
   host:
     - python {{ python_min }}
     - hatch-vcs
-    - hatchling
+    - hatchling >=1.27
     - pip
   run:
     - python >={{ python_min }}
