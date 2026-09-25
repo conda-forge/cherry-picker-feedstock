@@ -27,7 +27,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - click >=6
     - gidgethub
     - requests
     - stamina
