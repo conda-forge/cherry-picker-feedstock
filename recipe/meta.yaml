@@ -1,15 +1,15 @@
 {% set name = "cherry-picker" %}
 {% set import = "cherry_picker" %}
 {% set entrypoint = "cherry_picker" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "f6a362c450ef033090355bbee94fe3f7c600f23f0da57d27146f55700860d8f9" %}
+{% set version = "2.7.0" %}
+{% set sha256 = "8b690a87c3a144e136d9cf1cc21f3f357dcfdcc823fc41e964a789bec9cce74b" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -27,7 +27,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - click >=6
     - gidgethub
     - requests
     - stamina
