@@ -1,8 +1,8 @@
 {% set name = "cherry-picker" %}
 {% set import = "cherry_picker" %}
 {% set entrypoint = "cherry_picker" %}
-{% set version = "2.7.0" %}
-{% set sha256 = "8b690a87c3a144e136d9cf1cc21f3f357dcfdcc823fc41e964a789bec9cce74b" %}
+{% set version = "2.8.0" %}
+{% set sha256 = "8fbc86c23ea23820931ecdfbc9218ef904873ef4be1c52308919069d965747c5" %}
 
 package:
   name: {{ name|lower }}
