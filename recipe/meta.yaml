@@ -27,10 +27,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - gidgethub
-    - requests
     - stamina
-    - tomli >=1.1
+    - urllib3 >=2
 
 test:
   requires:
